@@ -1,0 +1,39 @@
+Definindo classes e criando objetos
+A programação orientada a objetos (POO) é um pilar fundamental do Java, 
+permitindo que você estruture seu código de forma a espelhar entidades do mundo real. 
+Esta lição apresenta os conceitos fundamentais de classes e objetos, os blocos de construção da POO. 
+Compreender como definir classes e criar objetos é crucial para escrever código Java modular,
+ reutilizável e de fácil manutenção. 
+Exploraremos a sintaxe para definir classes, declarar atributos (campos) e criar objetos a partir dessas classes. 
+Esse conhecimento lançará as bases para a compreensão de conceitos mais avançados de POO, como métodos,
+ construtores e herança, que abordaremos em lições subsequentes.
+
+Definindo Classes
+Uma classe é um modelo ou um esquema para a criação de objetos. 
+Ela define as características (atributos) e os comportamentos (métodos) que os objetos dessa classe possuirão.
+ Pense em uma classe como um cortador de biscoitos e nos objetos como os próprios biscoitos. 
+O cortador define o formato, e cada biscoito é uma instância desse formato.
+
+Atributos (Campos)
+Os atributos, também conhecidos como campos ou variáveis ​​de instância, representam os dados associados a um objeto. 
+Eles definem as características ou propriedades de um objeto.
+
+Modificadores de acesso
+Os modificadores de acesso controlam a visibilidade e a acessibilidade dos membros de uma classe (atributos e métodos). 
+Os modificadores de acesso mais comuns são:
+
+publicAcessível de qualquer lugar.
+privateAcessível somente dentro da sala de aula.
+protectedAcessível dentro da classe, subclasses e outras classes no mesmo pacote.
+(padrão) - Se nenhum modificador de acesso for especificado, será privado dentro do mesmo pacote, 
+o que significa que é acessível apenas dentro do mesmo pacote.
+
+
+O uso privatede atributos é um princípio fundamental do encapsulamento, 
+que exploraremos com mais detalhes adiante. 
+Ele permite controlar como os dados dentro de um objeto são acessados ​​e modificados.
+
+Criando objetos
+Um objeto é uma instância de uma classe. 
+É uma entidade concreta que existe na memória e 
+possui seu próprio conjunto de valores para os atributos definidos na classe.
