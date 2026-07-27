@@ -1,0 +1,15 @@
+Create a `Rectangle` class:
+
+**Attributes:**
+
+* `width` (double)
+* `height` (double)
+
+**Methods:**
+
+* `getArea()`: Returns the area of the rectangle (`width * height`).
+* `getPerimeter()`: Returns the perimeter of the rectangle (`2 * (width + height)`).
+* `setWidth(double width)`: Setter method for the width.
+* `setHeight(double height)`: Setter method for the height.
+
+Write a `Main` class that creates a `Rectangle` object, sets its width and height, and prints its area and perimeter.
