@@ -10,7 +10,8 @@ private: Atributos declarados como private só podem ser acessados ​​dentro 
 
 */
 public class Main {
-    public static void main(String[] args) {
+
+        public static void main(String[] args) {
         Car myCar = new Car();
 
         myCar.setModel("Tesla Model 3");
@@ -19,6 +20,7 @@ public class Main {
         System.out.println("Model: " + myCar.getModel());
         System.out.println("Speed: " + myCar.getSpeed());
     }
+
 }
 class Car {
     private String model;
