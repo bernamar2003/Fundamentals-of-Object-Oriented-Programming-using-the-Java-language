@@ -13,41 +13,57 @@ public class Car {
         System.out.println("Year: " + myCar.year);
         System.out.println("Current Speed: " + myCar.getCurrentSpeed());
 
-        // Accelerate the car
+        myCar.startEngine();
         myCar.accelerate(30);
-        // Brake the car
         myCar.brake(10);
+        myCar.stopEngine();
     }
+
     private String color;
     private String model;
     private int year;
     private int currentSpeed;
 
-    // Method to accelerate the car
+    // Start the engine
+    public void startEngine() {
+        if (currentSpeed == 0) {
+            System.out.println("Motor ligado.");
+            currentSpeed = 1; // Indica que o motor está ligado.
+        } else {
+            System.out.println("Carro já está funcionando.");
+        }
+    }
+
+    // Stop the engine
+    public void stopEngine() {
+        currentSpeed = 0;
+        System.out.println("Motor parado");
+    }
+
+    // Accelerate the car
     public void accelerate(int increment) {
+        if (currentSpeed == 0) {
+            System.out.println("Não é possível acelerar. O motor está desligado.");
+            return;
+        }
+
         currentSpeed += increment;
         System.out.println("Car accelerated. Current speed: " + currentSpeed);
     }
 
-    // Method to brake the car
+    // Brake the car
     public void brake(int decrement) {
         currentSpeed -= decrement;
+
         if (currentSpeed < 0) {
-            currentSpeed = 0; // Ensure speed doesn't go negative
+            currentSpeed = 0;
         }
+
         System.out.println("Car braked. Current speed: " + currentSpeed);
     }
 
-    // Method to get the current speed of the car
+    // Get current speed
     public int getCurrentSpeed() {
         return currentSpeed;
-    }
-
-    private String startEngine() {
-        if (currentSpeed == 0) {
-            return "Engine started!";
-        } else {
-            return "Car is already moving!";
-        }
     }
 }
