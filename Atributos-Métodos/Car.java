@@ -5,11 +5,13 @@ public class Car {
         myCar.color = "Red";
         myCar.model = "Toyota Camry";
         myCar.year = 2022;
+        myCar.currentSpeed = 0;
 
         System.out.println("Car Details:");
         System.out.println("Color: " + myCar.color);
         System.out.println("Model: " + myCar.model);
         System.out.println("Year: " + myCar.year);
+        System.out.println("Current Speed: " + myCar.getCurrentSpeed());
 
         // Accelerate the car
         myCar.accelerate(30);
@@ -39,5 +41,13 @@ public class Car {
     // Method to get the current speed of the car
     public int getCurrentSpeed() {
         return currentSpeed;
+    }
+
+    private String startEngine() {
+        if (currentSpeed == 0) {
+            return "Engine started!";
+        } else {
+            return "Car is already moving!";
+        }
     }
 }
