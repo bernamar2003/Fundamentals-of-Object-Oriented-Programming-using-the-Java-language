@@ -1,0 +1,31 @@
+A constructor is a special method that is called when an object of a class is created. 
+It has the same name as the class and does not have a return type (not even `undefined` void). 
+The main purpose of a constructor is to initialize the object's state, 
+that is, to define initial values ​​for the object's attributes (fields).
+
+Principais características dos construtores
+Nome: Um construtor deve ter o mesmo nome da classe à qual pertence.
+Sem tipo de retorno: Os construtores não possuem um tipo de retorno, nem mesmo um valor nulo void.
+Invocação: Os construtores são chamados automaticamente quando um objeto é criado usando a newpalavra-chave.
+Inicialização: O objetivo principal é inicializar os campos do objeto.
+Construtores múltiplos: Uma classe pode ter múltiplos construtores com parâmetros diferentes (sobrecarga de métodos).
+
+
+Tipos de construtores
+Existem dois tipos principais de construtores em Java:
+
+Construtor padrão (construtor sem argumentos): Um construtor que não recebe argumentos. 
+Se você não definir nenhum construtor em sua classe,
+ o Java fornecerá automaticamente um construtor padrão.
+ No entanto, se você definir algum construtor (com argumentos), 
+o Java não fornecerá o construtor padrão automaticamente.
+Construtor parametrizado: Um construtor que aceita um ou mais argumentos. 
+Esses argumentos são usados ​​para inicializar os campos do objeto com valores específicos.
+
+
+Regras para encadeamento de construtores
+O encadeamento de construtores deve ser feito usando a this()palavra-chave.
+A chamada para ` this()must` deve ser a primeira instrução no construtor.
+Um construtor só pode chamar outro construtor da mesma classe.
+Chamadas recursivas de construtores não são permitidas 
+(por exemplo, o construtor A chamando o construtor B, e o construtor B chamando o construtor A).
