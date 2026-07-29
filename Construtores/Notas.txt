@@ -29,3 +29,13 @@ A chamada para ` this()must` deve ser a primeira instrução no construtor.
 Um construtor só pode chamar outro construtor da mesma classe.
 Chamadas recursivas de construtores não são permitidas 
 (por exemplo, o construtor A chamando o construtor B, e o construtor B chamando o construtor A).
+
+
+Resumo
+Nesta lição, exploramos construtores em Java, que são métodos especiais usados ​​
+para criar e inicializar objetos. Abordamos os dois tipos principais de construtores: 
+construtores padrão (sem argumentos) e construtores parametrizados. 
+Também discutimos sobrecarga de construtores, a thispalavra-chave `new` 
+e encadeamento de construtores. Compreender construtores é crucial para uma 
+programação orientada a objetos eficaz em Java, pois eles garantem que os objetos 
+sejam inicializados corretamente quando são criados.
